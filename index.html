@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Songs for Markyyy</title>
+    <style>
+        body {
+            background-color: #0A192F;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 40px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        h3 {
+            font-size: 16px;
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+        .gif-container img {
+            width: 250px;
+            margin: 20px 0;
+        }
+        .btn {
+            background-color: white;
+            color: #0A192F;
+            padding: 8px 16px;
+            border: none;
+            font-size: 14px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .btn:hover {
+            background-color: #1E2A47;
+            color: white;
+        }
+        .spotify-container {
+            margin: 20px auto;
+            width: 90%;
+            max-width: 500px;
+        }
+        .spotify-container iframe {
+            width: 100%;
+            height: 380px;
+            border-radius: 12px;
+        }
+        .song-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            max-width: 900px;
+            margin: auto;
+        }
+        .song-box {
+            background: white;
+            color: #0A192F;
+            padding: 10px;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .song-box h4 {
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+        .song-box p {
+            font-size: 12px;
+            margin: 3px 0;
+        }
+        iframe {
+            border-radius: 8px;
+            width: 100%;
+            height: 130px;
+            flex-grow: 1;
+        }
+        .login-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .login-box {
+            background: white;
+            color: #0A192F;
+            padding: 20px;
+            border-radius: 8px;
+            width: 300px;
+            text-align: center;
+        }
+        .login-box input {
+            width: 90%;
+            padding: 8px;
+            margin: 5px 0;
+            border: none;
+            border-radius: 5px;
+        }
+        .error-message {
+            color: red;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container" id="loginPage">
+        <div class="login-box">
+            <h1>What's the magic word?</h1>
+            <input type="text" id="username" placeholder="Username">
+            <input type="password" id="password" placeholder="Password">
+            <p><i>Password hint: What do you call me?</i></p>
+            <button class="btn" onclick="checkLogin()">Login</button>
+            <p class="error-message" id="errorMsg"></p>
+        </div>
+    </div>
+
+    <div id="mainContent" style="display: none;">
+        <h1>Songs that Remind Me of You</h1>
+
+        <div class="gif-container">
+            <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExb2RmazQ4bGlvN3psZHBmbWQ2MzM2aHJua3U0OW03OHNsanhiOWhmeiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Sl7OlpTiHi9pPPZKp4/giphy.gif" alt="Vinyl Player GIF">
+        </div>
+
+        <div class="spotify-container">
+            <iframe src="https://open.spotify.com/embed/playlist/0yLkueDlAZlmaLfbyzhZK6?utm_source=generator" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+
+        <h3>or Mika's song request list that you can play HAHAHA</h3>
+
+        <div class="song-container">
+            <div class="song-box">
+                <h4>I Still Want Your Love</h4>
+                <p><i>Sam Ock, Jinnie</i></p>
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/4BRqNwdxo1E39xolKfKlho?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                <p><i style="font-size: 15px;">You don’t have to do anything</i></p>
+                <p><i style="font-size: 15px;">I’m still gonna love you</i></p>
+            </div>
+
+            <div class="song-box">
+                <h4>Keepyousafe</h4>
+                <p><i>Yahya</i></p>
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3Sbova9DAY3pc9GTAACT4b?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                <p><i style="font-size: 15px;">I can't show you how to love yourself</i></p>
+                <p><i style="font-size: 15px;">But I promise you</i></p>
+                <p><i style="font-size: 15px;">I'll be the one by your side</i></p>
+            </div>
+
+
+    <div class="song-box">
+    <h4>Hypotheticals</h4>
+    <p><i style="font-size: 15px;">Lake Street Dive</i></p>
+    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/5lE2EFXt4muvLFMGQg4hZN?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    <p><i style="font-size: 15px;">I've been playing out a lot of hypotheticals in my mind</i></p>
+    <p><i style="font-size: 15px;">I've been writing your name down next to mine</i></p>
+    <p><i style="font-size: 15px;">Been imagining all the things you and I could do</i></p>
+</div>
+
+<div class="song-box">
+    <h4>I Like You The Most (English vers)</h4>
+    <p><i style="font-size: 15px;">SHAD (PHL)</i></p>
+    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/40nbLencS61tH167bXCYyS?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    <p><i style="font-size: 15px;">So, if I call you tonight</i></p>
+    <p><i style="font-size: 15px;">Will you pick up and give me your time?</i></p>
+    <p><i style="font-size: 15px;">Miss you every night, miss you all the time</i></p>
+    <p><i style="font-size: 15px;">No, I don't even know where to start</i></p>
+    <p><i style="font-size: 15px;">'Cause you're the one that I like, I can't deny</i></p>
+</div>
+
+<div class="song-box">
+    <h4>Little Bit More</h4>
+    <p><i style="font-size: 15px;">Suriel Hess</i></p>
+    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/6rG1DdPCTzGibgHliYJ4ws?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    <p><i style="font-size: 15px;">I thought I knew every little thing about you</i></p>
+    <p><i style="font-size: 15px;">There's always more of you to learn</i></p>
+</div>
+
+<div class="song-box">
+    <h4>What I Think Of</h4>
+    <p><i style="font-size: 15px;">Chris Andrian Yang</i></p>
+    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/7bo8tXN2TzJOwUgXwYS4Gf?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    <p><i style="font-size: 15px;">And I can't lie, the fact that I've started fallin' for you</i></p>
+    <p><i style="font-size: 15px;">And I hope you feel the same</i></p>
+</div>
+
+<div class="song-box">
+    <h4>Home</h4>
+    <p><i style="font-size: 15px;">Reese Lansangan</i></p>
+    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/0dCDBADaqgcQ62LdyRsejn?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    <p><i style="font-size: 15px;">Did they tell you</i></p>
+    <p><i style="font-size: 15px;">Just how long a time</i></p>
+    <p><i style="font-size: 15px;">It took for me to get to you</i></p>
+</div>
+
+<div class="song-box">
+    <h4>Coffee</h4>
+    <p><i style="font-size: 15px;">a!ka</i></p>
+    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/2zCO8w8puVE1frDRpCBLuD?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    <p><i style="font-size: 15px;">I think I’m addicted ‘cause</i></p>
+    <p><i style="font-size: 15px;">You got me shakin’ from the caffeine</i></p>
+    <p><i style="font-size: 15px;">Oh-oh</i></p>
+    <p><i style="font-size: 15px;">Vanilla sweetness like I’m sixteen</i></p>
+</div>
+
+<div class="song-box">
+    <h4>Isa Lang</h4>
+    <p><i style="font-size: 15px;">Arthur Nery</i></p>
+</iframe><iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/0HAG6nIiEKd75yGpovuSJQ?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    <p><i style="font-size: 15px;">Lumiliwanag aking ngiti kapag kausap na kita</i></p>
+</div>
+
+<div class="song-box">
+    <h4>Ordinary Things</h4>
+    <p><i style="font-size: 15px;">Ariana Grande</i></p>
+    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/0fCINfrtQdkFSj6enmeEDt?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    <p><i style="font-size: 15px;">No matter what we do</i></p>
+    <p><i style="font-size: 15px;">There's never gonna be an ordinary thing</i></p>
+    <p><i style="font-size: 15px;">No ordinary things with you</i></p>
+</div>
+
+<div class="song-box">
+    <h4>Rainbow</h4>
+    <p><i style="font-size: 15px;">South Border</i></p>
+    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3VcVQmMivq2ISfKUmIuvMK?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    <p><i style="font-size: 15px;">And so baby, just smile</i></p>
+    <p><i style="font-size: 15px;">"Cause I'm always around you</i></p>
+    <p><i style="font-size: 15px;">And I'll make you see how beautiful</i></p>
+    <p><i style="font-size: 15px;">Life is for you and me</i></p>
+</div>
+
+<div class="song-box">
+    <h4>Mahal Kape Tayo</h4>
+    <p><i style="font-size: 15px;">Ej Clarks</i></p>
+    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/1FlRkswoMEPQzzd2KOBM0W?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    <p><i style="font-size: 15px;">At mainit mo na yakap</i></p>
+    <p><i style="font-size: 15px;">Laging hanap-hanap</i></p>
+</div>
+
+<div class="song-box">
+    <h4>Imperfect For You</h4>
+    <p><i style="font-size: 15px;">Ariana Grande</i></p>
+    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/6XXKB32Om6WuXg3uEWwTob?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    <p><i style="font-size: 15px;">My boy, come take my hand</i></p>
+    <p><i style="font-size: 15px;">Throw your guitar and your clothes in the back seat</i></p>
+    <p><i style="font-size: 15px;">My love, they don't understand</i></p>
+    <p><i style="font-size: 15px;">But I'll hold your hurt in the box here beside me</i></p>
+</div>
+
+<div class="song-box">
+    <h4>Soft Spot</h4>
+    <p><i style="font-size: 15px;">Keshi</i></p>
+    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/2aL4lMGhWdPpyPL6COPou7?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    <p><i style="font-size: 15px;">Don't believe in love, but no one makes me feel like you do</i></p>
+    <p><i style="font-size: 15px;">I don't say it much 'cause I just always thought that</i></p>
+    <p><i style="font-size: 15px;">You knew</i></p>
+</div>
+
+<div class="song-box">
+    <h4>Used to Me</h4>
+    <p><i style="font-size: 15px;">Luke Chiang</i></p>
+    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/5NF5TV9zGZ9QLKLf7Oq05T?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    <p><i style="font-size: 15px;">I hope it's mutual</i></p>
+    <p><i style="font-size: 15px;">'Cause I think I could get used to this</i></p>
+    <p><i style="font-size: 15px;">Wondering if you think you'd get used to me</i></p>
+</div>
+
+<div class="song-box">
+    <h4>It's You</h4>
+    <p><i style="font-size: 15px;">Max ft. Keshi</i></p>
+    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/1hWDc5jD5br9pXSOtubFlf?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    <p><i style="font-size: 15px;">I met you at the right time</i></p>
+    <p><i style="font-size: 15px;">See you and I'm still excited</i></p>
+</div>
+
+<div class="song-box">
+    <h4>GKYAM</h4>
+    <p><i style="font-size: 15px;">Adie</i></p>
+   <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/6Cxj7ww8DDqkrFHT93So1p?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    <p><i style="font-size: 15px;">Basta gusto kita, 'yun ang mahalaga</i></p>
+</div>
+
+<div class="song-box">
+    <h4>Paki Sabi</h4>
+    <p><i style="font-size: 15px;">Sunkissed Lola</i></p>
+    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/0BKZ6nfJM8pksG3NiZcxDS?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    <p><i style="font-size: 15px;">Nandito lang naman ako (ah)</i></p>
+    <p><i style="font-size: 15px;">Nadarama mo ba itong pag-ibig ko</i></p>
+</div>
+
+<div class="song-box">
+    <h4>I'm In Love With You</h4>
+    <p><i style="font-size: 15px;">The 1975</i></p>
+    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/12g9IeQzX7xECLNxz8dpb5?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    <p><i style="font-size: 15px;">There's somethin' I've been meaning to say to you, baby</i></p>
+</div>
+
+        </div>
+
+        <button class="btn" style="margin-top: 30px; padding: 10px 20px; font-size: 16px; line-height: 1.4;">
+            Thank you for being my muse, Markyyy! This is made with care and affection by your poet, Mika 💗
+        </button>
+        
+    </div>
+
+    <script>
+        function checkLogin() {
+            const password = document.getElementById('password').value.toLowerCase();
+            const errorMsg = document.getElementById('errorMsg');
+
+            if (password === 'mikapie') {
+                document.getElementById('loginPage').style.display = 'none';
+                document.getElementById('mainContent').style.display = 'block';
+            } else {
+                errorMsg.textContent = "Huh you can't remember what you call me???? 🥹";
+            }
+        }
+    </script>
+</body>
+</html>
